@@ -1,0 +1,149 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 25-06-2022, 10:00:37 AM
+    Author     : miguel
+*/
+
+body{
+    background-color: #2b2b31;
+}
+
+.info-dash{
+    background-color: #28282d;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #01739a !important;
+}
+
+.info-dash:before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: rgb(46,95,184);
+    background: linear-gradient(90deg, rgba(46,95,184,1) 0%, rgba(200,200,100,1) 100%);
+    top: 0;
+    left: 0;
+}
+
+
+
+/*custom icons*/
+.custom-icon{
+    user-select:none;
+    font-size: 2.5em !important;
+    background:linear-gradient(45deg, rgba(45,107,222,1) 20%, rgba(224,212,105,1) 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/*custom btn*/
+.custom-btn{
+    position: relative;
+    background: rgb(17,52,115);
+    background:-webkit-linear-gradient(45deg, #09009f, #008899 80%);
+    border-radius: 10px;
+    color:#dfdfe0;
+    box-shadow: 0px 0px 5px #0AC;
+    border:none !important;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    font-size:1em;
+    color:#BBB !important;
+    padding: .1em 1em;
+    height: 20px;
+    cursor: pointer;
+}
+th{
+    font-size: .9em;
+    font-variant: small-caps;
+}
+
+td{
+    font-weight: 100;
+    font-size: .95em;
+}
+
+/*slide-bar*/
+.slide-bar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 90vh;
+    background-color:#28282d ;
+    width: 350px;
+    margin-top: 80px;
+    z-index: 100;
+    transform: translateX(100%);
+    box-shadow: -2px 10px 20px rgba(0,0,0,0.4);
+
+}
+.start-slide{
+    transition: transform 1s;
+
+}
+.slide-bar-active{
+    transform: translateX(0%);
+    transition: transform 1s;
+
+}
+
+
+/*light line decoration */
+.line{
+    height: 3px;
+    background: rgb(46,95,184);
+    background: linear-gradient(90deg, rgba(46,95,184,1) 0%, rgba(200,200,100,1) 100%);
+    box-shadow: 0px 0px 30px 5px rgba(100,90,200,.4);
+    position:relative;
+    z-index: 10;
+}
+/*profile icon style*/
+.profile-icon{
+    display: flex;
+    width: 2.5em;
+    height: 2.5em;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+/**/
+.icon-slide{
+    font-size: 1.7em !important;
+    display: inline-block;
+    padding: .4em .6em;
+}
+
+
+.tabs-style{
+
+    display: flex;
+    height: 60px;
+    align-items: center;
+    color:#AAA;
+    font-weight: 200;
+}
+
+li{
+    list-style-type : none !important;
+    list-style: none;
+}
+
+
+
+a.active{
+    border-bottom: 1px solid #3b65a7;
+}

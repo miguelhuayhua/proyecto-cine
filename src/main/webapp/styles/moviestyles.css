@@ -1,0 +1,217 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 18-06-2022, 04:36:48 PM
+    Author     : miguel
+*/
+
+body{
+    background-color: #2b2b31 !important;
+}
+a{
+    color:#bbbbbd !important;
+    text-decoration: none;
+}
+a:hover{
+    color: #4e8cf1 !important;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-custom{
+    position: relative;
+    background: rgb(17,52,115);
+    background:-webkit-linear-gradient(45deg, #09009f, #008899 80%);
+    border-radius: 10px;
+    color:#dfdfe0;
+    font-weight: bold;
+    box-shadow: 0px 0px 5px #0AC;
+    border:none !important;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+}
+
+
+.img-background{
+    filter: brightness(.1);
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.thumb{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100% !important;
+    height: 100%
+}
+.line-after{
+    width:100%;
+    height: 200px;
+}
+.line-after:after{
+    content: "";
+    position:absolute;
+    top: 0;
+    right:0;
+    background-image:url('https://i.pinimg.com/originals/1b/d3/7d/1bd37d166881820aef36e9bd7e5ca0f6.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 150%;
+    width:100%;
+    height: 200px;
+    filter: brightness(.2);
+    z-index:0;
+}
+
+h2{
+    z-index: 100;
+}
+.line{
+    height: 3px;
+    background: rgb(46,95,184);
+    background: linear-gradient(90deg, rgba(46,95,184,1) 0%, rgba(200,200,100,1) 100%);
+    box-shadow: 0px -20px 50px 20px rgba(100,90,200,.4);
+    position:relative;
+    z-index: 10;
+}
+
+label{
+    color: #8F8F92;
+    display: block;
+    font-variant: all-small-caps;
+    margin-top: 1em;
+}
+
+/*hover and mask in the movie poster*/
+
+.img-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-100%);
+    background-color: rgba(0, 158, 225, .3);
+    background: linear-gradient(90deg, rgba(46,95,184,.5) 0%, rgba(105,178,224,.5) 100%);
+    top: 0;
+    right: 0;
+    z-index: 10000;
+    transition: transform 1s;
+
+}
+.img-card{
+    border-radius: 20px;
+    overflow: hidden;
+}
+.img-card:hover .img-back {
+    transform: translateY(0%);
+    transition: transform .3s;
+    cursor: pointer;
+}
+.img-card:hover img{
+    filter: brightness(.1);
+    transition: filter .5s;
+}
+
+a{
+    cursor: pointer;
+}
+
+
+/*Select custom*/
+select {
+    background-color:#27292f!important;
+    border: none !important;
+    flex: 1;
+    color:#fff;
+    border-bottom:  2px solid #00aacc !important;
+    cursor:pointer;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+}
+select::-ms-expand {
+    display: none;
+}
+.select {
+    position: relative;
+    display: flex;
+    width: 15em !important;
+    height: 2.7em;
+    line-height: 2.5;
+    overflow: hidden;
+    border-radius: .95em;
+}
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    color:#005dda;
+    background: #27292f;
+    cursor:pointer;
+    pointer-events:none;
+    transition:.25s all ease;
+}
+.select:hover::after {
+    color: #23b499;
+}
+
+
+/*search custom*/
+.input-custom {
+    background-color: transparent;
+    border:none;
+    color:white;
+    border-bottom: 2px solid  #00aacc;
+}
+
+.input-custom:focus{
+    outline: none;
+}
+.submit-custom{
+    background-color: transparent;
+    border:none;
+}
+
+/*custom icon*/
+.custom-icon{
+    user-select:none;
+    font-size: 2em !important;
+    background:linear-gradient(45deg, rgba(45,107,222,1) 20%, rgba(224,212,105,1) 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: .7em;
+    margin-right: .2em;
+}
+
+
+/*dropdown*/
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 150px;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: #222;
+}
+
+.dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    border-bottom: 1px solid #333;
+    text-decoration: none;
+}
+.dropdown-content a:hover {
+    color: #333;
+    background: rgb(17,52,115);
+}

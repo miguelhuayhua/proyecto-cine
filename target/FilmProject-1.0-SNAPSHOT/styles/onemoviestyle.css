@@ -1,0 +1,153 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 21-06-2022, 05:32:40 PM
+    Author     : miguel
+*/
+
+body{
+    background-color: #2b2b31 !important;
+}
+a{
+    color:#bbbbbd !important;
+    text-decoration: none;
+}
+a:hover{
+    color: #4e8cf1 !important;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-custom{
+    position: relative;
+    background: rgb(17,52,115);
+    background:-webkit-linear-gradient(45deg, #09009f, #008899 80%);
+    border-radius: 10px;
+    color:#dfdfe0;
+    font-weight: bold;
+    box-shadow: 0px 0px 5px #0AC;
+    border:none !important;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-custom:active
+
+{
+    outline: none;
+    border: none;
+}
+
+.btn-custom-hover{
+    border-radius: 10px;
+    color:#dfdfe0;
+    font-weight: bold;
+    box-shadow: 0px 0px 5px #0AC;
+    background-color: transparent;
+    border:2px solid #447;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-custom-hover:hover{
+    background: rgb(17,52,115);
+    background: -webkit-linear-gradient(45deg, #09009f, #0088BB 80%);
+    border-radius: 10px;
+    color:#dfdfe0;
+    font-weight: bold;
+    box-shadow: 0px 0px 15px #0AC;
+    border:none !important;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+
+}
+/*search custom*/
+.input-custom {
+    background-color: transparent;
+    border:none;
+    color:white;
+    border-bottom: 2px solid  #00aacc;
+}
+
+.input-custom:focus{
+    outline: none;
+}
+.submit-custom{
+    background-color: transparent;
+    border:none;
+}
+
+
+/*background after on main section*/
+.after:after{
+    content: "";
+    background-image: url('../assets/static/SFH9.jpg');
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    background-size: cover;
+    filter: brightness(0.2);
+    z-index: -1;
+}
+
+/*light bar to decorate*/
+.line{
+    height: 3px;
+    background: rgb(46,95,184);
+    background: linear-gradient(90deg, rgba(46,95,184,1) 0%, rgba(200,200,100,1) 100%);
+    box-shadow: 0px -20px 50px 20px rgba(100,90,200,.4);
+    position:relative;
+    z-index: 10;
+}
+
+
+/*Custom icons*/
+.custom-icon{
+    user-select:none;
+    font-size: 2em !important;
+    background:linear-gradient(45deg, rgba(45,107,222,1) 20%, rgba(224,212,105,1) 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: .7em;
+    margin-right: .2em;
+}
+textarea{
+    max-height: 200px;
+}
+
+
+/*dropdown*/
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 150px;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: #222;
+}
+
+.dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    border-bottom: 1px solid #333;
+    text-decoration: none;
+}
+.dropdown-content a:hover {
+    color: #333;
+    background: rgb(17,52,115);
+}

@@ -1,0 +1,88 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 24-06-2022, 08:38:42 PM
+    Author     : miguel
+*/
+
+
+/*Select custom*/
+select {
+    background-color:#27292f!important;
+    border: none !important;
+    flex: 1;
+    color:#fff;
+    border-bottom:  2px solid #069 !important;
+    cursor:pointer;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+}
+select::-ms-expand {
+    display: none;
+}
+.select {
+    position: relative;
+    display: flex;
+    width: 15em !important;
+    height: 2.7em;
+    line-height: 2.5;
+    overflow: hidden;
+    border-radius: .95em;
+}
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    color:#005dda;
+    background: #27292f;
+    cursor:pointer;
+    pointer-events:none;
+    transition:.25s all ease;
+}
+.select:hover::after {
+    color: #23b499;
+}
+
+/*card item styles*/
+.card-item{
+    background-color: transparent !important;
+    border: 2px solid rgba(242,226,83,0.5) !important;
+    border-radius: 20px;
+    margin-top: 1em;
+    transition: box-shadow 1s;
+    box-shadow: none;
+}
+
+.card-item:hover{
+    box-shadow: 0px 0px 20px rgba(242,226,83,0.5);
+    transition:box-shadow .5s;
+}
+
+/*search custom*/
+.custom-input {
+    background-color: transparent;
+    border:none;
+    color:white;
+    border-bottom: 2px solid  #00aacc;
+}
+
+.custom-input:focus{
+    outline: none;
+    background-color: transparent;
+
+}
+.submit-custom{
+    background-color: transparent;
+    border:none;
+}
+
+
+/*seat actives*/
+.seat-active{
+    background-color: #3b3b41;
+    border-radius: 10px;
+}
